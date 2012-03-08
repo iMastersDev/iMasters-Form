@@ -1,0 +1,13 @@
+.new:before {
+	content: "+ ";
+	font-weight: bold;
+}
+
+.button.new {
+	background-color: #4E9A06;
+	color: #FFFFFF;
+}
+
+	.button.new.down {
+		background-color: #3B7A2A;
+	}
