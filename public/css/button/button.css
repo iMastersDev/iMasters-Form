@@ -1,0 +1,17 @@
+.button {
+	padding: 6px 12px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	color: #666666;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	border-radius: 4px;
+}
+
+	.button:hover {
+		color:#333333;
+	}
+	
+	.button.down {
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.4) inset;
+		background-color: #FDFDFD;
+	}
