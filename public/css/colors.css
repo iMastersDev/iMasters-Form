@@ -1,0 +1,34 @@
+body, a {
+	color: #666666;
+}
+
+/**
+ * Cores de frente e fundo.
+ */
+.default-fg {
+	color: #189AB1;
+}
+
+.exclusion-fg {
+	color: #FF3333;
+}
+
+.inclusion-fg {
+	color: #4E9A06;
+}
+
+.default-bg, .exclusion-bg, .inclusion-bg {
+	color: #FFFFFF;
+}
+
+.default-bg {
+	background-color: #189AB1;
+}
+
+.exclusion-bg {
+	background-color: #FF3333;
+}
+
+.inclusion-bg {
+	background-color: #4E9A06;
+}

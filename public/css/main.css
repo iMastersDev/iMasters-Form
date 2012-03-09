@@ -2,3 +2,7 @@ body {
 	font-family: Helvetica;
 	font-size: 12pt;
 }
+
+a {
+	text-decoration: none;
+}
