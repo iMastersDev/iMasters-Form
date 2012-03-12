@@ -1,6 +1,7 @@
 body {
-	font-family: Helvetica;
-	font-size: 12pt;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	line-height:1em;
 }
 
 a {
