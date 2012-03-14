@@ -32,3 +32,7 @@ body, a {
 .inclusion-bg {
 	background-color: #4E9A06;
 }
+
+.selection-bg:hover {
+	background-color: #FFFFCC;
+}

@@ -1,0 +1,74 @@
+#iMasters-Form {
+	display:block;
+	width:900px;
+	margin: 0px auto;
+}
+
+	#iMasters-Form > .title, #iMasters-Form > .description {
+		box-shadow:none;
+		border:0px none;
+		padding: 0px;
+		width:inherit;
+		margin-left: 4px;
+	}
+	
+	.title, .description {
+		display:block;
+	}
+	
+	.title {
+		font-size: 1.5em;
+		color: #3333333;
+	}
+	
+	.description {
+		margin: 4px 0px;
+		min-height:6em;
+	}
+	
+	fieldset {
+		border: 0px none;
+		padding: 4px;
+		margin: 0;
+	}
+	
+		fieldset > .question {
+			display:block;
+			float:left;
+			width: 400px;
+		}
+	
+			fieldset .title, fieldset .description {
+				width:inherit;
+			}
+		
+		.alternatives {
+			display:block;
+			float:right;
+			width: 400px;
+		}
+		
+			.alternatives > .list {
+				min-height: 8em;
+			}
+			
+		fieldset .controls {
+			clear:both;
+			padding-top:20px;
+		}
+		
+			fieldset .controls > .question {
+				float:left;
+			}
+			
+			fieldset .controls > .alternative {
+				float:right;
+			}
+		
+.controls.question {
+	float:left;
+}
+
+.controls.form {
+	float:right;
+}

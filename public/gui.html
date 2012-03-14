@@ -7,31 +7,48 @@
 		<link rel="stylesheet" type="text/css" href="css/colors.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/button/button.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/menu/dropdown.css" />
+		<link rel="stylesheet" type="text/css" href="css/form/form.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
 		<script src="js/iMasters.js"></script> 
+		<script src="js/app.js"></script> 
 	</head>
 	<body>
-		<a class="button add inclusion-bg" href="#" title="Alternativa">Alternativa</a>
-		<br /><br />
-		<div class="dropdown default-bg">
-			<a href="#" class="selection">Tipo de resposta</a>
-			<ul class="list">
-				<li class="option"><a href="#">Radio</a></li>
-				<li class="option"><a href="#">Checkbox</a></li>
-				<li class="option"><a href="#">Input</a></li>
-				<li class="option"><a href="#">Select</a></li>
-				<li class="option"><a href="#">Textarea</a></li>
-			</ul>
-		</div>
-		<br /><br />
-		<a class="button default-bg" href="#" title="Salvar">Salvar</a>
-		<br /><br />
-		<a class="button default-bg" href="#" title="Responder">Responder</a>
-		<br /><br />
-		<a class="button add inclusion-bg" href="#" title="Pergunta">Pergunta</a>
-		<br /><br />
-		<a class="button" href="#" title="Cancelar">Cancelar</a>
-		<br /><br />
-		<a class="button exclusion-bg" href="#" title="Excluir">Excluir</a>
-		<br /><br />
+		<form id="iMasters-Form" action="#">
+			<input class="title" name="title" placeholder="Título do formulário" />
+			<textarea class="description" name="description" placeholder="Descrição do formulário"></textarea>
+			
+			<fieldset class="selection-bg">
+				<div class="question">
+					<input class="title" name="question[title][]" placeholder="Pergunta" />
+					<textarea class="description" name="question[description][]" placeholder="Descrição da pergunta"></textarea>
+					<label><input type="checkbox" name="question[required][]" /> Pergunta requerida</label>
+				</div>
+				<div class="alternatives">
+				</div>
+				<div class="controls">
+					<div class="question">
+						<a class="button add question inclusion-bg" href="#" title="Pergunta">Pergunta</a>
+						<a class="button del question exclusion-bg" href="#" title="Excluir">Excluir Pergunta</a>
+					</div>
+					<div class="alternative">
+						<div class="dropdown default-bg">
+							<a href="#" class="selection">Tipo de resposta</a>
+							<ul class="list">
+								<li class="option"><a href="#">Escolha uma</a></li>
+								<li class="option"><a href="#">Escolha várias</a></li>
+								<li class="option"><a href="#">Campo texto</a></li>
+							</ul>
+						</div>
+						<a class="button add inclusion-bg" href="#" title="Alternativa">Alternativa</a>
+					</div>
+				</div>
+			</fieldset>
+			
+			<hr />
+			<div class="controls form">
+				<a class="button" href="#" title="Cancelar">Cancelar</a>
+				<a class="button default-bg" href="#" title="Salvar">Salvar</a>
+			</div>
+		</form>
 	</body>
 </html>
